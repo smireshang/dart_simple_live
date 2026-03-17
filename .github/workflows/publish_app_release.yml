@@ -3,7 +3,9 @@ name: app-build-action
 on:
   push:
     tags:
-      - "v*"
+      - "v1.11.1"
+  workflow_dispatch:
+  
 jobs:
   build-mac-ios-android:
     runs-on: macos-latest
